@@ -1,0 +1,4 @@
+sphinx>=8.1.*
+sphinx-needs>=4.1.*
+sphinxcontrib-plantuml>=0.30
+sphinx-performance>=0.1.*
