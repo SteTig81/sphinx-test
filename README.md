@@ -34,5 +34,5 @@ The following commands are valid for Ubuntu Linux based systems with bash:
 ## tracing
 
     cd temp/tmpk4cke7ji  # example
-    rm -rf _build && python3 -m viztracer --tracer_entries 500000 ../../venv/bin/sphinx-build -b html -j 4 ./ ./_build --fail-on-warning
-    viztracer result.json  # note: use chrome browser as firefox crashes for high tracer_entries values
+    rm -rf _build && python3 -m viztracer --tracer_entries 1000000 ../../venv/bin/sphinx-build -b html -j 4 ./ ./_build --fail-on-warning
+    vizviewer result.json  # note: use chrome browser as firefox crashes for high tracer_entries values
