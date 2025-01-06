@@ -28,6 +28,11 @@ The following commands are valid for Ubuntu Linux based systems with bash:
 ## profiling
 
     cd temp/tmpk4cke7ji  # example
-    rm -rf _build && python -m cProfile -o profile.out ../../venv/bin/sphinx-build -b html ./ ./_build --fail-on-warning
+    rm -rf _build && python3 -m cProfile -o profile.out ../../venv/bin/sphinx-build -b html -j 4 ./ ./_build --fail-on-warning
     snakeviz profile.out
 
+## tracing
+
+    cd temp/tmpk4cke7ji  # example
+    rm -rf _build && python3 -m viztracer --tracer_entries 500000 ../../venv/bin/sphinx-build -b html -j 4 ./ ./_build --fail-on-warning
+    viztracer result.json  # note: use chrome browser as firefox crashes for high tracer_entries values
