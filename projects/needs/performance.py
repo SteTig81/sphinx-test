@@ -2,7 +2,7 @@ parameters = {
     "sphinx": "8.1.3",
     "sphinx_needs": "4.1.0",
     "needs": 10,
-    "needtables": 2,
+    "needtables": 1,
     "dummies": 10,
     "pages": 10,
     "folders": 0,
